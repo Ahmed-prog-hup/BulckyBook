@@ -1,0 +1,39 @@
+﻿
+<div class="container">
+   <div class="row pt-4 pb-2">
+     <div class="col-6">
+        <h2 class="text-primary"> Company List </h2>
+     </div>
+     <div class="col-6 text-end">
+         <a asp-action="UpSert" class="btn btn-primary">
+                <i class="bi bi-cart-plus"></i>Create New Company
+         </a>
+     </div>
+   </div>
+    <table id="TableData" class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+               <th>
+                   Name
+               </th>
+               <th>
+                    StreetAddress
+                </th>
+                <th>
+                   City
+                </th>
+                <th>
+                    PostalCode
+                </th>
+                <th>
+                    PhoneNumber
+                </th>
+                <th></th>
+        </tr>
+    </thead>
+    
+</table>
+</div>
+@section scripts{
+    <script src="~/js/Company.js"></script>
+}
